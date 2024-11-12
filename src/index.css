@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.minHeight {
+  min-height: 100vh;
+}
+
+.opacity-pulse {
+  animation: opacityPulse 2s infinite;
+}
+
+@keyframes opacityPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+input[type ="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
