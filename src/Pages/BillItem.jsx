@@ -70,7 +70,7 @@ const BillItem = () => {
     if (userData.role !== "admin") {
       return toast.error("غير مسموح لك بالمرتجع");
     }
-    const sentData = { user: userData.id, clint: data.clientID, amount: data.payed, date: data.checkDate, num: data.checkNumber };
+    const sentData = { user: userData.id, clint: data.clientID, amount: data.payed, date: data.checkDate, num: data.checkNumber,bank_name: data.bankName };
     const response = await postData(`return_check`, sentData, localStorage.getItem("token"));
     if (response.data) {
       toast.success("تم اضافة المرتجع بنجاح");
