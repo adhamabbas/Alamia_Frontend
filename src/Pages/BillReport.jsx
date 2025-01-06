@@ -109,9 +109,8 @@ const BillReport = () => {
               <p className="text-right text-lg">طريقة الدفع: {item.paymentMethod}</p>
               <p className="text-right text-lg">الموظف: {item.employee}</p>
               <p className="text-right text-lg">التاريخ: {item.date.split("T")[0]}</p>
-              <p className="text-right text-lg">رقم الشيك: {item.checkNumber}</p>
               <div className="flex justify-center sm:justify-end">
-                <Link to={currentPage === "receive-bill" ? "/receive-bill/add" : "/pay-bill/add"} className={text-lg font-medium t}
+                <Link to={/${currentPage === "receive-bill" ? "receive-bill" : "pay-bill"}/${item.id}} className="text-[#01D1ED] font-semibold text-lg">
                   عرض
                 </Link>
               </div>
