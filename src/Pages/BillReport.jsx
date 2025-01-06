@@ -88,7 +88,7 @@ const BillReport = () => {
         <Link to={currentPage === "receive-bill" ? "/receive-bill/add" : "/pay-bill/add"} className={text-lg font-medium text-darkGreen hover:text-white duration-200}>
           اضافة
         </Link>
-        <Link to={currentPage === "receive-bill" ? "/receive-bill/report" : "/pay-bill/report"} className={"text-lg font-medium text-darkGreen hover:text-white duration-200"}>
+        <Link to={currentPage === "receive-bill" ? "/receive-bill/report" : "/pay-bill/report"} className={text-lg font-medium text-darkGreen hover:text-white duration-200}>
           تقرير
         </Link>
       </div>
@@ -111,7 +111,7 @@ const BillReport = () => {
               <p className="text-right text-lg">التاريخ: {item.date.split("T")[0]}</p>
               <p className="text-right text-lg">رقم الشيك: {item.checkNumber}</p>
               <div className="flex justify-center sm:justify-end">
-                <Link to={currentPage === "receive-bill" ? "/receive-bill/add" : "/pay-bill/add"} className="text-lg font-medium t"
+                <Link to={currentPage === "receive-bill" ? "/receive-bill/add" : "/pay-bill/add"} className={text-lg font-medium t}
                   عرض
                 </Link>
               </div>
