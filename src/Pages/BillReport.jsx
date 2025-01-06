@@ -88,7 +88,7 @@ const BillReport = () => {
         <Link to={currentPage === "receive-bill" ? "/receive-bill/add" : "/pay-bill/add"} className={text-lg font-medium text-darkGreen hover:text-white duration-200}>
           اضافة
         </Link>
-        <Link to={currentPage === "receive-bill" ? "/receive-bill/report" : "/pay-bill/report"} className={text-lg font-medium text-darkGreen hover:text-white duration-200}>
+        <Link to={currentPage === "receive-bill" ? "/receive-bill/report" : "/pay-bill/report"} className={"text-lg font-medium text-darkGreen hover:text-white duration-200"}>
           تقرير
         </Link>
       </div>
