@@ -101,24 +101,23 @@ const BillReport = () => {
       {!loading && list.length > 0 && authorized && (
         <div className="xl:w-[50%] xl:mx-auto">
           {list.map((item) => (
-            <div dir="rtl" key={item.id} className="flex flex-wrap gap-4 items-center bg-white p-4 rounded-lg font-medium text-lg mb-6">
-  <p className="text-right text-lg">
-    {currentPage === "receive-bill" ? "العميل" : "المورد"}: {item.client}
-  </p>
-  <p className="text-right text-lg">المدفوع: {item.payed.toFixed(2)} ج م</p>
-  <p className="text-right text-lg">طريقة الدفع: {item.paymentMethod}</p>
-  <p className="text-right text-lg">الموظف: {item.employee}</p>
-  <p className="text-right text-lg">التاريخ: {item.date.split("T")[0]}</p>
-  {/* التحقق من وجود رقم الشيك وإظهاره */}
-  {item.checkNumber && (
-    <p className="text-right text-lg">رقم الشيك: {item.checkNumber}</p>
-  )}
-  <div className="flex justify-center sm:justify-end">
-    <Link to={/${currentPage === "receive-bill" ? "receive-bill" : "pay-bill"}/${item.id}} className="text-[#01D1ED] font-semibold text-lg">
-      عرض
-    </Link>
-  </div>
-</div>
+                <div dir="rtl" key={item.id} className="flex flex-wrap gap-4 items-center bg-white p-4 rounded-lg font-medium text-lg mb-6">
+                       <p className="text-right text-lg">
+                      {currentPage === "receive-bill" ? "العميل" : "المورد"}: {item.client}
+                        </p>
+                        <p className="text-right text-lg">المدفوع: {item.payed.toFixed(2)} ج م</p>
+                        <p className="text-right text-lg">طريقة الدفع: {item.paymentMethod}</p>
+                        <p className="text-right text-lg">الموظف: {item.employee}</p>
+                        <p className="text-right text-lg">التاريخ: {item.date.split("T")[0]}</p>
+ 
+                         {item.checkNumber && (
+                          <p className="text-right text-lg">رقم الشيك: {item.checkNumber}</p>
+                                )}
+                       <div className="flex justify-center sm:justify-end">
+                     <Link to={/${currentPage === "receive-bill" ? "receive-bill" : "pay-bill"}/${item.id}} className="text-[#01D1ED] font-semibold text-lg">
+                            عرض
+                           </Link>
+                            </div>
           ))}
         </div>
       )}
