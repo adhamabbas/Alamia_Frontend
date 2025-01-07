@@ -85,10 +85,10 @@ const BillReport = () => {
     <section className="grow pb-6 pt-[70px] px-4 minHeight">
       <BillsNavigation />
       <div className="flex justify-center gap-8 mb-6">
-        <Link to={currentPage === "receive-bill" ? "/receive-bill/add" : "/pay-bill/add"} className={text-lg font-medium text-darkGreen hover:text-white duration-200}>
+        <Link to={`/${currentPage === "receive-bill" ? "/receive-bill/add" : "/pay-bill/add"}`} className={`text-lg font-medium text-darkGreen hover:text-white duration-200`}>
           اضافة
         </Link>
-        <Link to={currentPage === "receive-bill" ? "/receive-bill/report" : "/pay-bill/report"} className={text-lg font-medium text-darkGreen hover:text-white duration-200}>
+        <Link to={`/${currentPage === "receive-bill" ? "/receive-bill/report" : "/pay-bill/report"}`} className={`text-lg font-medium text-darkGreen hover:text-white duration-200`}>
           تقرير
         </Link>
       </div>
