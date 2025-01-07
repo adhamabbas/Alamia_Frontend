@@ -110,7 +110,7 @@ const BillReport = () => {
               <p className="text-right text-lg">الموظف: {item.employee}</p>
               <p className="text-right text-lg">التاريخ: {item.date.split("T")[0]}</p>
               <div className="flex justify-center sm:justify-end">
-                <Link to={/${currentPage === "receive-bill" ? "receive-bill" : "pay-bill"}/${item.id}} className="text-[#01D1ED] font-semibold text-lg">
+                <Link to={`/${currentPage === "receive-bill" ? "receive-bill" : "pay-bill"}/${item.id}`} className="text-[#01D1ED] font-semibold text-lg">
                   عرض
                 </Link>
               </div>
