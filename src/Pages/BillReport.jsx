@@ -33,7 +33,7 @@ const BillReport = () => {
     if (currentPage !== "") {
       const fetchList = async () => {
         if (currentPage === "receive-bill") {
-          const response = await getData(sell_bell, localStorage.getItem("token"));
+          const response = await getData("sell_bell", localStorage.getItem("token"));
           console.log(response);
           let temp = response.data.map((item) => {
             return { id: item._id, client: item.clint.clint_name || item.clint, payed: item.payBell, paymentMethod: item.paymentMethod, employee: item.user.name, date: item.updatedAt, checkNumber: item?.checkNumber };
@@ -43,7 +43,7 @@ const BillReport = () => {
           setTempList(temp);
           setLoading(false);
         } else {
-          const response = await getData(buy_bell, localStorage.getItem("token"));
+          const response = await getData("buy_bell", localStorage.getItem("token"));
           console.log(response);
 
           let temp = response.data.map((item) => {
