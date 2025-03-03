@@ -1,6 +1,6 @@
 import axios from "axios";
 // const baseURL = "https://alalamya.onrender.com/api/v1/";
-const baseURL = "https://alamya-9a8m.vercel.app";
+const baseURL = "https://alamya-9a8m.vercel.app/";
 
 
 export const postData = async (url, data, token) => {
