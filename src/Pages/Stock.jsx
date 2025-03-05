@@ -103,7 +103,7 @@ const Stock = () => {
         <Select onChange={(e) => setSelectedProduct(e.value)} className="w-[250px]" styles={customStyles} options={products} placeholder="اسم المنتج" />
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-6 xl:w-[50%] xl:mx-auto">
-        <a href={`https://alamia-1vfdgf2n.b4a.run/api/v1/warehous/export/size`} target="_blank" to="/add-client" className=" items-center justify-center bg-navyColor hover:bg-[#234863] duration-200 text-white text-lg py-2 px-6 rounded-lg">
+        <a href={`https://alalamya.onrender.com/api/v1/warehous/export/size`} target="_blank" to="/add-client" className=" items-center justify-center bg-navyColor hover:bg-[#234863] duration-200 text-white text-lg py-2 px-6 rounded-lg">
           طباعة
         </a>
       </div>
