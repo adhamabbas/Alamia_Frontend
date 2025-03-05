@@ -92,7 +92,7 @@ const Suppliers = () => {
         <Select onChange={(e) => setSelectedSupplier(e.value)} className="w-[250px]" styles={customStyles} options={suppliers} placeholder="اسم المورد" />
       </div>
       <div className="flex justify-center gap-4 mb-8 md:mb-24">
-        <a href={`https://alamia-1vfdgf2n.b4a.run/api/v1/buy_bell/export/scheck`} target="_blank" className=" items-center justify-center bg-navyColor hover:bg-[#234863] duration-200 text-white text-lg py-2 px-6 rounded-lg">
+        <a href={`https://alalamya.onrender.com/api/v1/buy_bell/export/scheck`} target="_blank" className=" items-center justify-center bg-navyColor hover:bg-[#234863] duration-200 text-white text-lg py-2 px-6 rounded-lg">
           شيكات
         </a>
         <a href={`https://alalamya.onrender.com/api/v1/supplayrs/${selectedSupplier}/exportToExcel`} target="_blank" className=" items-center justify-center bg-navyColor hover:bg-[#234863] duration-200 text-white text-lg py-2 px-6 rounded-lg">
