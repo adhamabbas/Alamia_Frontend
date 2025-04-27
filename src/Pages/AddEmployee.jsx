@@ -48,7 +48,7 @@ const AddEmployee = () => {
   const regEmail = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
 
   const handleClick = async () => {
-    if (userData.role !== "admin2") {
+    if (userData.role !== "admin") {
       return toast.error("غير مسموح لك بالاضافة");
     }
     if (!name || !email || !password || !passwordConfirm || !role) {
