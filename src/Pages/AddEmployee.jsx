@@ -31,6 +31,7 @@ const customStyles = {
 
 const options = [
   { value: "admin", label: "Admin" },
+  { value: "admin2", label: "Eng" },
   { value: "manager", label: "Manager" },
   { value: "storage_employee", label: "Storage Employee" },
   { value: "bill_employee", label: "Bills Employee" },
@@ -47,7 +48,7 @@ const AddEmployee = () => {
   const regEmail = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
 
   const handleClick = async () => {
-    if (userData.role !== "admin") {
+    if (userData.role !== "admin2") {
       return toast.error("غير مسموح لك بالاضافة");
     }
     if (!name || !email || !password || !passwordConfirm || !role) {
